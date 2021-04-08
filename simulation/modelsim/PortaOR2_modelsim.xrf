@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.0sp1/Teste/PortaOR2.vhd
+source_file = 1, C:/altera/13.0sp1/Teste/db/PortaOR2.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = PortaOR2
+instance = comp, \en10~I\, en10, PortaOR2, 1
+instance = comp, \en11~I\, en11, PortaOR2, 1
+instance = comp, \s4~0\, s4~0, PortaOR2, 1
+instance = comp, \s4~I\, s4, PortaOR2, 1

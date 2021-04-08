@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.0sp1/Teste/Registrador.vhd
+source_file = 1, C:/altera/13.0sp1/Teste/db/Registrador.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Registrador
+instance = comp, \clk~I , clk, Registrador, 1
+instance = comp, \clk~clkctrl , clk~clkctrl, Registrador, 1
+instance = comp, \d[0]~I , d[0], Registrador, 1
+instance = comp, \q[0]~reg0 , q[0]~reg0, Registrador, 1
+instance = comp, \d[1]~I , d[1], Registrador, 1
+instance = comp, \q[1]~reg0feeder , q[1]~reg0feeder, Registrador, 1
+instance = comp, \q[1]~reg0 , q[1]~reg0, Registrador, 1
+instance = comp, \q[0]~I , q[0], Registrador, 1
+instance = comp, \q[1]~I , q[1], Registrador, 1

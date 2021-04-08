@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.0sp1/Teste/portaNOT.vhd
+source_file = 1, C:/altera/13.0sp1/Teste/db/portaNOT.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = portaNOT
+instance = comp, \en9~I , en9, portaNOT, 1
+instance = comp, \s3~I , s3, portaNOT, 1

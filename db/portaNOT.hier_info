@@ -1,0 +1,5 @@
+|portaNOT
+en9 => s3.DATAIN
+s3 <= en9.DB_MAX_OUTPUT_PORT_TYPE
+
+

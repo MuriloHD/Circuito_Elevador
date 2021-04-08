@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.0sp1/Teste/portaEND5Entradas.vhd
+source_file = 1, C:/altera/13.0sp1/Teste/db/portaEND5Entradas.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = portaEND5Entradas
+instance = comp, \en6~I , en6, portaEND5Entradas, 1
+instance = comp, \en7~I , en7, portaEND5Entradas, 1
+instance = comp, \en5~I , en5, portaEND5Entradas, 1
+instance = comp, \en4~I , en4, portaEND5Entradas, 1
+instance = comp, \s2~0 , s2~0, portaEND5Entradas, 1
+instance = comp, \en8~I , en8, portaEND5Entradas, 1
+instance = comp, \s2~1 , s2~1, portaEND5Entradas, 1
+instance = comp, \s2~I , s2, portaEND5Entradas, 1

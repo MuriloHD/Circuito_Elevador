@@ -1,0 +1,9 @@
+|portaEND5Entradas
+en4 => s2.IN0
+en5 => s2.IN1
+en6 => s2.IN1
+en7 => s2.IN1
+en8 => s2.IN1
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+

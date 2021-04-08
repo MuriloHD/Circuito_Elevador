@@ -1,0 +1,6 @@
+|PortaOR2
+en10 => s4.IN0
+en11 => s4.IN1
+s4 <= s4.DB_MAX_OUTPUT_PORT_TYPE
+
+
