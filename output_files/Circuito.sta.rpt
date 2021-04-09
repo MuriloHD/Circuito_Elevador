@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Circuito
-Fri Apr 09 15:22:16 2021
+Fri Apr 09 15:33:50 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -207,7 +207,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 09 15:22:15 2021
+    Info: Processing started: Fri Apr 09 15:33:49 2021
 Info: Command: quartus_sta Circuito -c Circuito
 Info: qsta_default_script.tcl version: #1
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
@@ -287,7 +287,7 @@ Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 50 warnings
     Info: Peak virtual memory: 4535 megabytes
-    Info: Processing ended: Fri Apr 09 15:22:16 2021
+    Info: Processing ended: Fri Apr 09 15:33:50 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

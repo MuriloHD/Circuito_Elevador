@@ -88,17 +88,17 @@ ARCHITECTURE comportamento OF circuito IS
 			u6:portaNOT port map(en9=>li, s3=>liB);
 			u7:portaNOT port map(en9=>Gr, s3=>GrB);
 			
-			-- n1
+			-- n1 = s1's2'B2B1'LS'Gr + s1s2'B2B1'LS'Gr
 			u8:portaEND6Entradas port map(en4=>s1B, en5=>s2B, en6=>b2, en7=>b1B, en8=>lsB ,en9=>Gr, s2=>n1c1);
 			u9:portaEND6Entradas port map(en4=>s1, en5=>s2B, en6=>b2, en7=>b1B, en8=>lsB ,en9=>Gr, s2=>n1c2);
 			u10:portaOR2 port map(en10=>n1c1,en11=>n1c2,s4=>n1);
 			
-			-- n2
+			-- n2 = s1's2'B2'B1Li'Gr + s1's2B2'B1Li'Gr
 			u11: portaEND6Entradas port map(en4=>s1B, en5=>s2B, en6=>b2B, en7=>b1, en8=>liB ,en9=>Gr, s2=>n2c1);
 			u12: portaEND6Entradas port map(en4=>s1B, en5=>s2, en6=>b2B, en7=>b1, en8=>liB ,en9=>Gr, s2=>n2c2);
 			u13: portaOR2 port map(en10=>n2c1,en11=>n2c2,s4=>n2);
 			
-			-- S
+			-- S = s1s2'B2B1'LS'Gr + s1s2'B2' + s1s2'B2B1 + s1s2'LS + s1s2'Gr'
 			u14: portaEND6Entradas port map(en4=>s1, en5=>s2B, en6=>b2, en7=>b1B, en8=>lsB ,en9=>Gr, s2=>sc1);
 			u15: portaEND3Entradas port map(en1=>s1, en2=>s2B, en3=>b2B, s1=>sc2);
 			u16: portaEND4Entradas port map(en1=>s1, en2=>s2B, en3=>b2, en4=>b1, s1=>sc3);
@@ -106,7 +106,7 @@ ARCHITECTURE comportamento OF circuito IS
 			u18: portaEND3Entradas port map(en1=>s1, en2=>s2B, en3=>GrB, s1=>sc5);
 			u19: portaOR5 port map(en1=>sc1, en2=>sc2, en3=>sc3, en4=>sc4, en5=>sc5, s1=>s);
 			
-			-- D
+			-- D = s1's2B2'B1Li'Gr + s1's2B1' +s1's2B2B1 + s1's2Li + s1's2Gr'
 			u20: portaEND6Entradas port map(en4=>s1B, en5=>s2, en6=>b2B, en7=>b1, en8=>liB ,en9=>Gr, s2=>dc1);
 			u21: portaEND3Entradas port map(en1=>s1B, en2=>s2, en3=>b1B, s1=>dc2);
 			u22: portaEND4Entradas port map(en1=>s1B, en2=>s2, en3=>b2, en4=>b1, s1=>dc3);
@@ -116,5 +116,5 @@ ARCHITECTURE comportamento OF circuito IS
 			
 			-- Registrador
 			u26:Registrador port map(clk=>c, d1=>s1, d2=>s2, n1=>n1, n2=>n2);
-			END;
+END comportamento;
 			

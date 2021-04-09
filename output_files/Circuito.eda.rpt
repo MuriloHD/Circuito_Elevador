@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Circuito
-Fri Apr 09 15:22:17 2021
+Fri Apr 09 15:33:51 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Apr 09 15:22:17 2021 ;
+; EDA Netlist Writer Status ; Successful - Fri Apr 09 15:33:51 2021 ;
 ; Revision Name             ; Circuito                              ;
 ; Top-level Entity Name     ; circuito                              ;
 ; Family                    ; Cyclone II                            ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 09 15:22:16 2021
+    Info: Processing started: Fri Apr 09 15:33:51 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Circuito -c Circuito
 Info (204019): Generated file Circuito.vo in folder "C:/Users/jpfca/OneDrive/Documentos/UFRN/circuitos digitais/Circuito_Elevador/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4518 megabytes
-    Info: Processing ended: Fri Apr 09 15:22:17 2021
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Apr 09 15:33:51 2021
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
