@@ -1,21 +1,30 @@
 |Circuito
-Grades => portaEND3Entradas:u4.en2
-Grades => portaEND5Entradas:u5.en4
-Grades => portaEND3Entradas:u9.en1
-Grades => portaEND5Entradas:u10.en4
-UP => portaEND3Entradas:u4.en1
-UP => portaEND5Entradas:u5.en5
-UP => portaNOT:u8.en9
-Donw => portaNOT:u1.en9
-Donw => portaEND3Entradas:u9.en2
-Donw => portaEND5Entradas:u10.en6
-LimI => portaNOT:u3.en9
-LimI => portaEND3Entradas:u4.en3
-LimS => portaNOT:u2.en9
-LimS => portaEND3Entradas:u9.en3
-C => Registrador:u12.clk
-Subir <= Registrador:u12.n1
-Descer <= Registrador:u12.n2
+Gr => portaNOT:u7.en9
+Gr => portaEND6Entradas:u8.en9
+Gr => portaEND6Entradas:u9.en9
+Gr => portaEND6Entradas:u11.en9
+Gr => portaEND6Entradas:u12.en9
+Gr => portaEND6Entradas:u14.en9
+Gr => portaEND6Entradas:u20.en9
+b2 => portaNOT:u3.en9
+b2 => portaEND6Entradas:u8.en6
+b2 => portaEND6Entradas:u9.en6
+b2 => portaEND6Entradas:u14.en6
+b2 => portaEND4Entradas:u16.en3
+b2 => portaEND4Entradas:u22.en3
+b1 => portaNOT:u4.en9
+b1 => portaEND6Entradas:u11.en7
+b1 => portaEND6Entradas:u12.en7
+b1 => portaEND4Entradas:u16.en4
+b1 => portaEND6Entradas:u20.en7
+b1 => portaEND4Entradas:u22.en4
+li => portaNOT:u6.en9
+li => portaEND3Entradas:u23.en3
+ls => portaNOT:u5.en9
+ls => portaEND3Entradas:u17.en3
+c => Registrador:u26.clk
+s <= portaOR5:u19.s1
+d <= portaOR5:u25.s1
 
 
 |Circuito|portaNOT:u1
@@ -33,56 +42,175 @@ en9 => s3.DATAIN
 s3 <= en9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Circuito|portaEND3Entradas:u4
-en1 => s1.IN0
-en2 => s1.IN1
-en3 => s1.IN1
-s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Circuito|portaEND5Entradas:u5
-en4 => s2.IN0
-en5 => s2.IN1
-en6 => s2.IN1
-en7 => s2.IN1
-en8 => s2.IN1
-s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Circuito|portaOR2:u6
-en10 => s4.IN0
-en11 => s4.IN1
-s4 <= s4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Circuito|portaNOT:u8
+|Circuito|portaNOT:u4
 en9 => s3.DATAIN
 s3 <= en9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Circuito|portaEND3Entradas:u9
+|Circuito|portaNOT:u5
+en9 => s3.DATAIN
+s3 <= en9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaNOT:u6
+en9 => s3.DATAIN
+s3 <= en9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaNOT:u7
+en9 => s3.DATAIN
+s3 <= en9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND6Entradas:u8
+en4 => s2.IN0
+en5 => s2.IN1
+en6 => s2.IN1
+en7 => s2.IN1
+en8 => s2.IN1
+en9 => s2.IN1
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND6Entradas:u9
+en4 => s2.IN0
+en5 => s2.IN1
+en6 => s2.IN1
+en7 => s2.IN1
+en8 => s2.IN1
+en9 => s2.IN1
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaOR2:u10
+en10 => s4.IN0
+en11 => s4.IN1
+s4 <= s4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND6Entradas:u11
+en4 => s2.IN0
+en5 => s2.IN1
+en6 => s2.IN1
+en7 => s2.IN1
+en8 => s2.IN1
+en9 => s2.IN1
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND6Entradas:u12
+en4 => s2.IN0
+en5 => s2.IN1
+en6 => s2.IN1
+en7 => s2.IN1
+en8 => s2.IN1
+en9 => s2.IN1
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaOR2:u13
+en10 => s4.IN0
+en11 => s4.IN1
+s4 <= s4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND6Entradas:u14
+en4 => s2.IN0
+en5 => s2.IN1
+en6 => s2.IN1
+en7 => s2.IN1
+en8 => s2.IN1
+en9 => s2.IN1
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND3Entradas:u15
 en1 => s1.IN0
 en2 => s1.IN1
 en3 => s1.IN1
 s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Circuito|portaEND5Entradas:u10
+|Circuito|portaEND4Entradas:u16
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+en4 => ~NO_FANOUT~
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND3Entradas:u17
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND3Entradas:u18
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|PortaOR5:u19
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+en4 => s1.IN1
+en5 => ~NO_FANOUT~
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND6Entradas:u20
 en4 => s2.IN0
 en5 => s2.IN1
 en6 => s2.IN1
 en7 => s2.IN1
 en8 => s2.IN1
+en9 => s2.IN1
 s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Circuito|portaOR2:u11
-en10 => s4.IN0
-en11 => s4.IN1
-s4 <= s4.DB_MAX_OUTPUT_PORT_TYPE
+|Circuito|portaEND3Entradas:u21
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Circuito|Registrador:u12
+|Circuito|portaEND4Entradas:u22
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+en4 => ~NO_FANOUT~
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND3Entradas:u23
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|portaEND3Entradas:u24
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|PortaOR5:u25
+en1 => s1.IN0
+en2 => s1.IN1
+en3 => s1.IN1
+en4 => s1.IN1
+en5 => ~NO_FANOUT~
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito|Registrador:u26
 clk => n2~reg0.CLK
 clk => n1~reg0.CLK
 d1 => n1~reg0.DATAIN

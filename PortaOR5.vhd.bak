@@ -1,0 +1,10 @@
+ENTITY PortaOR5 IS
+	PORT(en1, en2, en3, en4, en5: IN BIT;
+			s1: OUT BIT);
+END PortaOR5;
+
+ARCHITECTURE comportamento OF PortaOR5 IS 
+BEGIN
+	s4 <= en10 OR en11;
+			
+END;		

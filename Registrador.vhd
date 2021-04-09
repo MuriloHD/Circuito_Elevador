@@ -1,11 +1,10 @@
 entity Registrador is
 	port( clk,d1,d2: in bit;
 			n1,n2: out bit
-			
 	);
-end registrador;
+end Registrador;
 
-architecture behavior of registrador is
+architecture behavior of Registrador is
 begin
 	process(clk)
 	begin
